@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPostId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del Post a actualizar" />
+
+    <EditText
+        android:id="@+id/editTextNewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo título"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNewBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo cuerpo"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Post"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewApiResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="16dp"
+        android:textSize="14sp" />
+</LinearLayout>

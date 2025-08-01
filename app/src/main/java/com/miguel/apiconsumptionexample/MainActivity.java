@@ -1,5 +1,7 @@
 package com.miguel.apiconsumptionexample;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +48,21 @@ public class MainActivity extends AppCompatActivity {
 
         // Llamar al metodo para obtener los posts
         fetchPosts();
+
+        Button btnCrear = findViewById(R.id.btnCrear);
+        Button btnActualizar = findViewById(R.id.btnActualizar);
+
+        btnCrear.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(intent);
+        });
+
+        btnActualizar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+            startActivity(intent);
+        });
+
+
     }
 
     private void fetchPosts() {
